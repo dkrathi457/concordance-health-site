@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+    .word { font-family: 'Lora', serif; font-weight: 600; font-size: 40px; fill: #10201B; }
+    .sub  { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 2.5px; fill: #2E4B6B; }
+  </style>
+
+  <g transform="translate(14,14) scale(0.85)">
+    <path d="M8 55 L18 40 L24 68 L30 35 L36 60 L42 50 L46 55"
+          fill="none" stroke="#2E4B6B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M54 55 C64 55 66 30 76 30 C84 30 86 55 92 55"
+          fill="none" stroke="#2FA88A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="55" r="5.5" fill="#10201B"/>
+  </g>
+
+  <text x="118" y="62" class="word">Concordance</text>
+  <text x="120" y="86" class="sub">HEALTH AI</text>
+</svg>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="Logo/mark-convergence.svg">
+<title>Contact | Concordance Health AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 100 100" width="36" height="36" aria-hidden="true">
+        <path d="M8 55 L18 40 L24 68 L30 35 L36 60 L42 50 L46 55" fill="none" stroke="#2E4B6B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M54 55 C64 55 66 30 76 30 C84 30 86 55 92 55" fill="none" stroke="#2FA88A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="50" cy="55" r="7" fill="#10201B"/>
+      </svg>
+      <span class="logo-word">
+        <span class="logo-name">Concordance</span>
+        <span class="logo-sub">HEALTH AI</span>
+      </span>
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">START A DISCOVERY →</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="contact-hero">
+    <div class="wrap">
+      <h1>Contact us to schedule a Discovery engagement.</h1>
+      <p>A focused, fixed-fee assessment of whether AI is right for your problem, and what the best solution looks like.</p>
+    </div>
+  </section>
+
+  <section class="contact-body" style="padding:96px 0;">
+    <div class="wrap">
+
+      <!--
+        NOTE: This form has no backend attached yet. To make it actually send
+        messages, either:
+          (a) point the <form> action at a form service (e.g. Formspree, Basin), or
+          (b) wire it to your own backend / serverless function.
+        Until then, treat this as a working layout, not a live form.
+      -->
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company">
+
+        <label for="message">What are you working on?</label>
+        <textarea id="message" name="message" required placeholder="Tell us about your problem, your data, and what you're hoping AI can do."></textarea>
+
+        <button type="submit" class="btn btn-primary">Request a Discovery Engagement</button>
+      </form>
+
+      <div class="contact-side">
+        <div class="role">Prefer Email?</div>
+        <h3>Reach us directly</h3>
+        <p>For general questions, partnership inquiries, or if you'd rather skip the form:</p>
+        <a href="mailto:hello@example.com" class="email">[contact email]</a>
+
+        <div class="cv-divider" style="margin:32px 0;"></div>
+
+        <div class="role">What Happens Next</div>
+        <h3 style="font-size:17px;">A 3-step start</h3>
+        <ul class="cv-list">
+          <li>We reply within 2 business days to schedule an intro call</li>
+          <li>We scope a fixed-fee <b>Discovery</b> engagement ($5,000) tailored to your problem</li>
+          <li>You get a written assessment and a clear recommendation on next steps</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fmark">Concordance Health AI</div>
+    <div class="flinks">
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="fnote">RESEARCH &middot; VALIDATION &middot; DEPLOYMENT</div>
+  </div>
+</footer>
+
+</body>
+</html>
