@@ -25,7 +25,11 @@
         <span class="logo-sub">HEALTH AI</span>
       </span>
     </a>
-    <div class="navlinks">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navPanel">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <div class="nav-panel" id="navPanel">
+      <div class="navlinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="team.html">Team</a>
@@ -33,7 +37,8 @@
       <a href="pricing.html">Pricing</a>
       <a href="contact.html" class="active">Contact</a>
     </div>
-    <a href="contact.html" class="nav-cta">START A DISCOVERY →</a>
+      <a href="contact.html" class="nav-cta">START A DISCOVERY →</a>
+    </div>
   </nav>
 </header>
 
@@ -96,17 +101,21 @@
 
 <footer>
   <div class="wrap">
-    <div class="fmark">Concordance Health AI</div>
-    <div class="flinks">
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-    </div>
+    <a href="index.html" class="fmark">
+      <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true">
+        <path d="M8 55 L18 40 L24 68 L30 35 L36 60 L42 50 L46 55" fill="none" stroke="#8FB5A9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M54 55 C64 55 66 30 76 30 C84 30 86 55 92 55" fill="none" stroke="#2FA88A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="50" cy="55" r="7" fill="#FDFDFB"/>
+      </svg>
+      <span class="fmark-word">
+        <span class="fmark-name">Concordance</span>
+        <span class="fmark-sub">HEALTH AI</span>
+      </span>
+    </a>
     <div class="fnote">RESEARCH &middot; VALIDATION &middot; DEPLOYMENT</div>
   </div>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
