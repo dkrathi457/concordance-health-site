@@ -56,8 +56,8 @@
 
   <section class="contact-hero">
     <div class="wrap">
-      <h1>Contact us to schedule a Discovery engagement.</h1>
-      <p>A focused, fixed-fee assessment of whether AI is right for your problem, and what the best solution looks like.</p>
+      <h1>Schedule a Discovery engagement.</h1>
+      <p>A focused, fixed-fee assessment of whether AI is right for your problem, and what the best solution looks like. Tell us a little about your work, and we'll take it from there.</p>
     </div>
   </section>
 
@@ -78,10 +78,22 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="company">Company</label>
+        <label for="company">Company / Organization</label>
         <input type="text" id="company" name="company">
 
-        <label for="message">What are you working on?</label>
+        <label>Which service are you interested in? <span class="field-hint">select one</span></label>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="service" value="discovery"><span><b>Discovery</b>: a fixed-fee assessment of whether AI fits your problem</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="roadmap"><span><b>Plan &amp; Roadmap</b>: a concrete, milestoned development plan</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="build"><span><b>Build</b>: a working, validated model from your data</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="integrate"><span><b>Integrate</b>: embedding AI into your product, with applied research support</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="co-develop"><span><b>Co-Develop</b>: end-to-end partnership from concept to deployment</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="research-grant"><span><b>Research &amp; Grant Support</b>: papers, patents, and NIH proposal support</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="multiple"><span><b>Multiple services</b>: e.g. Discovery, Plan &amp; Roadmap, and Build together</span></label>
+          <label class="radio-option"><input type="radio" name="service" value="not-sure"><span><b>Not sure yet</b>: we'll help you figure out the right starting point</span></label>
+        </div>
+
+        <label for="message">What are you working on? <span class="field-hint">a few sentences is plenty</span></label>
         <textarea id="message" name="message" required placeholder="Tell us about your problem, your data, and what you're hoping AI can do."></textarea>
 
         <button type="submit" class="btn btn-primary">Request a Discovery Engagement</button>
@@ -89,18 +101,18 @@
 
       <div class="contact-side">
         <div class="role">Prefer Email?</div>
-        <h3>Reach us directly</h3>
+        <h3>Reach us directly.</h3>
         <p>For general questions, partnership inquiries, or if you'd rather skip the form:</p>
         <a href="mailto:hello@example.com" class="email">[contact email]</a>
 
         <div class="cv-divider" style="margin:32px 0;"></div>
 
         <div class="role">What Happens Next</div>
-        <h3 style="font-size:17px;">A 3-step start</h3>
+        <h3 style="font-size:17px;">A simple three-step start.</h3>
         <ul class="cv-list">
-          <li>We reply within 2 business days to schedule an intro call</li>
-          <li>We scope a fixed-fee <b>Discovery</b> engagement tailored to your problem</li>
-          <li>You get a written assessment and a clear recommendation on next steps</li>
+          <li>We reply within two business days to schedule an introductory call.</li>
+          <li>On the call, we discuss your goals, data, resources, and constraints.</li>
+          <li>You receive clear recommendations on next steps, with an engagement estimate tailored to your goals.</li>
         </ul>
       </div>
 

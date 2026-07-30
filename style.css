@@ -280,39 +280,44 @@ nav.wrap {
 
 /* ============================= CREDIBILITY STRIP ============================= */
 
-.strip {
+.capabilities {
   background: var(--ink);
+  color: rgba(253, 253, 251, 0.82);
+  padding: 76px 0;
+}
+
+.capabilities h2 {
   color: var(--paper);
-  padding: 28px 0;
+  max-width: 640px;
 }
 
-.strip .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 28px 40px;
-  justify-content: space-between;
+.capability-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 40px;
+  margin-top: 32px;
+  list-style: none;
 }
 
-.stat {
-  font-size: 13.5px;
-  color: rgba(253, 253, 251, 0.75);
-  white-space: nowrap;
+.capability-grid li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: rgba(253, 253, 251, 0.78);
 }
 
-.stat b {
-  font-family: var(--font-serif);
-  font-size: 18px;
+.capability-grid li b {
   color: var(--paper);
-  margin-right: 4px;
 }
 
-.funders {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  color: var(--sage);
-  white-space: nowrap;
+.capability-grid li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 8px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--signal);
 }
 
 /* ============================= WHY / LEADERSHIP ============================= */
@@ -326,6 +331,24 @@ nav.wrap {
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: start;
+}
+
+.why-dark {
+  background: var(--ink);
+}
+
+.why-dark .eyebrow { color: #8FB5A9; }
+.why-dark h2 { color: var(--paper); }
+.why-dark .big { color: rgba(253, 253, 251, 0.78); }
+
+.why-dark .btn-ghost {
+  color: var(--paper);
+  border-color: rgba(253, 253, 251, 0.3);
+}
+
+.why-dark .btn-ghost:hover {
+  border-color: var(--signal);
+  color: var(--paper);
 }
 
 /* ============================= BREADTH TABLE ============================= */
@@ -564,6 +587,45 @@ td.domain {
 .contact-form textarea { min-height: 140px; resize: vertical; }
 
 .contact-form button { margin-top: 24px; align-self: flex-start; }
+
+.field-hint {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: none;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form .radio-group label.radio-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 0;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-dim);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.contact-form .radio-group label.radio-option:has(input:checked) {
+  border-color: var(--signal);
+}
+
+.radio-option input[type="radio"] {
+  margin-top: 3px;
+  accent-color: var(--signal-dark);
+  flex-shrink: 0;
+}
 
 .contact-side {
   background: var(--paper-dim);
@@ -947,10 +1009,12 @@ footer .wrap {
 
 @media (max-width: 640px) {
   .steps { grid-template-columns: 1fr; }
-  .strip .wrap { flex-direction: column; align-items: flex-start; }
   .press .wrap { flex-direction: column; align-items: flex-start; }
   .pdf-cta { flex-direction: column; align-items: flex-start; }
-  table.domains td.domain { width: auto; }
+  .capability-grid { grid-template-columns: 1fr; }
+  table.domains { table-layout: fixed; }
+  table.domains td.domain { width: 34%; white-space: normal; overflow-wrap: break-word; }
+  table.domains td { overflow-wrap: break-word; }
 }
 
 /* ============================= PRINT (Services & Pricing PDF) ============================= */
